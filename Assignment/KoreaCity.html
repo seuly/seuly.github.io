@@ -1,6 +1,16 @@
 <!doctype html> <!-- Koreacity.html -->
 <html>
 <head> <meta charset="utf-8"> <meta name="viewport" content="width=device, initial-scale=1">
+<script>
+function event1onclick() { document.getElementById("id_1").innerHTML
+	= "대한민국의 수도인 서울을 지방자치단체인 특별시로 부르는 명칭이다. 한반도 중앙에 있으며, 한강을 사이에 두고 남북으로 펼쳐져 있다. 북쪽 끝은 도봉구 도봉동, 동쪽 끝은 강동구 상일동, 남쪽 끝은 서초구 원지동, 서쪽 끝은 강서구 오곡동이다. 시청은 중구 을지로1가(태평로1가 31)에 있다.<br/>";}
+function event2onclick() { document.getElementById("id_1").innerHTML
+	= "행정구역 총면적 539.34㎢ 가운데 유성구가 176.37㎢로 가장 넓다. 캐릭터는 한꿈이, 마스코트는 꿈돌이이다. 2001년 말 현재 일본의 오다[大田], 미국의 시애틀, 헝가리의 부다페스트, 중국의 난징[南京], 캐나다의 캘거리, 스웨덴의 웁살라, 러시아의 노보시비르스크, 오스트레일리아의 브리즈번 등과 자매결연을 맺었다.<br/>";}
+function event3onclick() { document.getElementById("id_1").innerHTML
+	= "북쪽으로 경상북도 칠곡군·군위군, 동쪽으로 경상북도 경산시·청도군, 남쪽으로 경상남도 창녕군, 서쪽으로 경상북도 고령군·성주군과 접한다. 영남지방의 중앙에서 서쪽으로 치우친 대구분지의 중앙부, 낙동강(洛東江)과 금호강(琴湖江)의 합류지점 동쪽 금호강 연안에 있다.<br/>";}
+function event4onclick() { document.getElementById("id_1").innerHTML
+	= "한국 제1의 무역항으로, 천연적인 조건 및 국내 경제의 급속한 발전에 힘입어 국제적으로도 태평양 연안의 손꼽히는 항구 중 하나가 되었다. 제주도로 운항하는 국내 여객선이 있으며 국제선은 일본 시모노세키와는 정기선이 페리가 취항하고, 그리고 후쿠오카, 이즈하라, 히타카츠, 오사카는 정기 여객선이 운항된다. 국제 항공노선은 도쿄[東京]·오사카[大阪]·상하이·베이징 등지와 항공로로 연결된다. 시를 상징하는 꽃은 동백꽃이고, 나무는 동백나무, 새는 갈매기이다.<br/>";}
+</script>
 <style>
   * {box-sizing:border-box; padding:0; margin:0;}
   .row::after {content:""; clear:both; display:table;}
@@ -28,9 +38,9 @@
 <div class="row"></div>
 <div id="main">
   <nav class="col-3 col-m-3 menu"> <!-- 메뉴 -->
-    <ul> <li>서울</li> <li>대전</li> <li>대구</li> <li>부산</li> </ul></nav>
+    <ul> <li onclick = "event1onclick()">서울</li> <li onclick="event2onclick()">대전</li> <li onclick="event3onclick()">대구</li> <li onclick="event4onclick()">부산</li> </ul></nav>
   <section class="col-6 col-m-9">
-    <h3>대전광역시</h3><p>우리나라 중앙에 위치한 150만......</p>
+    <h3>KOREA</h3><p id = "id_1">우리 나라 광역시 중...</p>
     <picture>
     <source media="(min-width:768px)" srcset="lob_big.png">
     <source media="(min-width:600px)" srcset="lob_normal.png">
