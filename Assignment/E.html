@@ -1,0 +1,49 @@
+<!doctype html> <!-- E.html -->
+<html>
+<head> <meta charset="utf-8"> <meta name="viewport" content="width=device, initial-scale=1">
+<script>
+function event1onclick() { document.getElementById("id_1").innerHTML
+	= "<h4>신이슬</h4><br/>출생 : 1998년 5월 6일 인천<br/>학력 : 대전대학교 컴퓨터공학과 재학<br/>꿈과 희망이 넘치는 미래 : 하고 싶은 게 너무 많다. 다만 직업은 전공과 관련된 쪽을 원한다.<br/>";}
+function event2onclick() { document.getElementById("id_1").innerHTML
+	= "<h4>대전대에서 기타 활동</h4>&nbsp;1학년 때 전공 교수님의 권유로 삼성 spcp에 나갔었습니다. 하지만 처음 예선 문제를 보자마자 이건 풀 수 있는 게 아니다, 하는 생각이 제일 먼저 들었습니다. 그래서 과감하게 포기하고 문제를 열심히 읽었습니다.<br/>&nbsp;1학년 때 교양 교수님의 권유로 학교에서 하는 1인1권지성인증제 라는 프로그램 비슷한 것을 하게 되었습니다. 학생들이 자신이 하고 싶은 이야기를 책으로 만들어 10권 정도 출판을 해 주는 것입니다.<br/>&nbsp;2학년 1학기 현재, 5생활관(HRC)에서 튜터로 활동하고 있습니다. 제 개인 시간이 많이 빼앗긴다는 단점이 있지만 그럼에도 열심히 활동 했습니다.<br/>";}
+function event3onclick() { document.getElementById("id_1").innerHTML
+	= "<h4>목표!</h4>1. 제일 큰 목표는 한 학기 다니면서 성적 잘 받기<br/>2. 그 다음 목표는 학교에서 최대한 많은 장학금(현금으로)받기.<br/>3. 마지막으로 졸업하기 전에 여러 시험 보기.<br>&nbsp;－1. 토익(700이상)<br/> &nbsp;－2. 정보처리기사<br/>&nbsp;－3. 컴퓨터 활용능력<br/>";}
+function event4onclick() { document.getElementById("id_1").innerHTML
+	= "현재 대전대학교 컴퓨터공학과 2학년에 재학중이며, 올해 초반에는 도서관을 들락거렸다. 하지만 요즘엔 현생에 치여 그마저도 잘 가지 못하고 지금은 하루하루 목숨을 연명하는 게 고작인 슬픈 인생....";}
+</script>
+<style>
+  * {box-sizing:border-box; padding:0; margin:0;}
+  .row::after {content:""; clear:both; display:table;}
+  [class*="col-"] {float:left; padding:10px;}
+  .header, .footer {background-color:lightgray; color:white; padding:10px;}
+  .menu ul, .banner ul {list-style-type:none;}
+  .menu li {background-color:lightgreen; color:black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
+  .menu li:hover {background-color:green;}
+  .banner li {border:2px solid black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
+  .banner li img {width:30%; vertical-align:middle;}
+  /* for mobile */
+  @media only screen and (min-width:600px) {	/* For tablets: */
+    .col-m-1 {width:8.33%}    .col-m2 {width:16.66%}    .col-m-3 {width:25%}    .col-m-4 {width:33.33%}
+    .col-m-5 {width:41.66%}    .col-m-6 {width:50%}    .col-m-7 {width:58.33%}    .col-m-8 {width:66.66%}
+    .col-m-9 {width:75%}    .col-m-10 {width:83.33%}    .col-m-11 {width:91.66%}    .col-m-12 {width:100%} }
+  @media only screen and (min-width:786px) {	/* For desktop: */
+    .col-1 {width:8.33%}    .col-2 {width:16.66%}    .col-3 {width:25%}    .col-4 {width:33.33%}
+    .col-5 {width:41.66%}    .col-6 {width:50%}    .col-7 {width:58.33%}    .col-8 {width:66.66%}
+    .col-9 {width:75%}    .col-10 {width:83.33%}    .col-11 {width:91.66%}    .col-12 {width:100%} }
+</style>
+<title>E 포트폴리오</title>
+</head>
+<body>
+<header class="header"><h2>E 포트폴리오</h2></header>
+<div class="row"></div>
+<div id="main">
+  <nav class="col-3 col-m-3 menu"> <!-- 메뉴 -->
+    <ul> <li onclick = "event1onclick()">프로필</li> <li onclick="event2onclick()">대전대에서 기타활동</li> <li onclick="event3onclick()">목표</li> <li onclick="event4onclick()">현재</li></ul></nav>
+  <section class="col-6 col-m-9">
+    <h3 onclick="id_1"></h3><p id = "id_1">옆에를 눌러주세요~</p>
+  </section>
+  <aside class="col-3 col-m-12 banner">
+    <ul><li><img src="flag.png">국적 : 한국</li><li><img src="flag.png"/>영어로 : Korea</li></ul></aside>
+</div>
+<div class="row"></div>
+<footer class="footer"><h4>Copy 20XX Korea.</h4></footer></body></html>
